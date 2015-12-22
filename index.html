@@ -2,12 +2,11 @@
 <html lang="en">
     <head>
 		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Responsive Horizontal Layout</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-        <meta name="description" content="Responsive Horizontal Layout with jQuery and custom Scrollbars" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Work Term Report - Bhupinder Manhas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Report Work Term Manhas,Bhupinder" />
         <meta name="keywords" content="horizontal, scrolling, panels, layout, template, jquery, responsive, custom scrollbar, html5" />
-        <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -24,7 +23,7 @@
     </head>
     <body>
         <div id="hs-container" class="hs-container">
-			
+
 			<aside class="hs-menu" id="hs-menu">
 				<div class="hs-headline">
 					<h1><small>Modern</small> App <small>Development</small></h1>
@@ -43,7 +42,7 @@
 					<a href="#chapter"><span>Chapter VII.</span><span>--------</span></a>
 					<a href="#chapter"><span>Chapter VIII.</span><span>--------</span></a>
 					<a href="#chapter"><span>Chapter IX.</span><span>-----------</span></a>
-					
+
 				</nav>
 			</aside>
 			<a href="#hs-menu" class="hs-totop-link">Go to the top</a>
@@ -52,15 +51,21 @@
 					<article class="hs-content" id="introduction">
 						<div class="hs-inner">
 							<h2>Introduction</h2>
+
+							<p>
+New languages, which address existing issues in software development, have become preferred choice for many companies. The MEAN development has become the first choice for new and old developers alike. Languages such as AngularJS and NodeJS have made development of client-server applications quicker and easier than ever before and  offer rapid application development.
+</p>
+
 							
 							<p>
 							The purpose of the web was to serve static web pages to clients, but over time needs have changed and this has given rise to numerous technologies, which serve the purpose. From simple forms to web applications like Facebook, the web has become more complex than ever and popular languages such as PHP, JavaScript, and ASP.net have evolved over-time to address growing expectations.
 							</p>
+
+
+
+
 <p>
-New languages, which address existing issues in software development, have become preferred choice for many companies. The MEAN development has become the first choice for new and old developers alike. Languages such as AngularJS and NodeJS have made development of client-server applications quicker and easier than ever before, both offer rapid application development. 
-</p>
-<p>
-The purpose of this paper is to demonstrate how these two technologies  (AngularJS and NodeJS) work in conjunction to accelerate software development and provide comparison with existing traditional approaches to application development. 
+The purpose of this paper is to demonstrate how these two technologies  (AngularJS and NodeJS) work in conjunction to accelerate software development and provide comparison with existing traditional approaches to application development.
 </p>
 <p>
 The paper demonstrates the key features of these languages by developing a simple “to-do” app where a user can mange his account and to-do list via the application. The application provides a login interface and currently supports only one user but this can be scaled; the application is meant to demonstrate key concepts of AngularJS and NodeJS.
@@ -69,18 +74,18 @@ The paper demonstrates the key features of these languages by developing a simpl
 The data for the user is stored in a JSON file; this eliminates the need to set-up a database. A common choice for data storage when working with AngularJS and NodeJS is MongoDB. The paper doesn’t provide any details how to use MongoDB in conjunction with AngularJS and NodeJS; the reader is encouraged to investigate how this can be achieved.
 </p>
 
-							
+
 						</div>
 					</article>
 					<article class="hs-content" id="chapter1">
 						<div class="hs-inner">
 							<h2>Chapter I.</h2>
 							<h3>What is Angular all about</h3>
-							
+
 							<h4>What was really needed</h4>
-							<p>Many frameworks like JQuery, Backbone, and Prototype amongst other exist to accelerate front development but angular brings the much-needed MVC architecture, which enables modern application to be extendable, maintainable, testable and standardized. 
+							<p>Many frameworks like JQuery, Backbone, and Prototype amongst other exist to accelerate front development but angular brings the much-needed MVC architecture, which enables modern application to be extendable, maintainable, testable and standardized.
 							</p>
-							
+
 							<p>Before Angular, Jquery was a popular choice for development projects. Writing code with JQuery, generally, required attaching functions to specific “ids” on the page.  While this approach got the job done, but the code was highly un-maintainable and gave the impression of a “hack”, or code written by a novice programmer; AngularJS was the missing link. </p>
 
 							<h4>What is brings</h4>
@@ -100,7 +105,7 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 							 	<td><p>Controller</p> </td>
 							 	<td><p>Binds Model and View together and controls interactions between the two and applies business logic to the application.
 							 		<br/>
-								Eg. What to do when user clicks on the table row where data is present. 
+								Eg. What to do when user clicks on the table row where data is present.
 								</p></td>
 							 </tr>
 							</table>
@@ -119,10 +124,10 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 									  <tr>
 									     <td><pre><code>$(element).datePicker()</code></pre></td>
 									     <td><pre><code>&lt;input type=&quot;text&quot; date-picker/&gt;</code></pre>
-									     				
+
 									     				<br><i>or<i><br>
 									     	  <pre><code>&lt;date-picker&gt;&lt;/date-picker&gt;</code></pre>
-														
+
 
 									     </td>
 									  </tr>
@@ -140,7 +145,7 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 
 							Also, Angular enables templating , i.e reusing snippets of html anywhere in the application, encouraging code reusability. Generally, a scripting language like PHP handled this where the html file had to be turned (renamed) to a php file, only to enable html reusability; this seemed like a hack by itself.
 							<br><br>
- 							Moreover, Angular works very well with forms to handle user-input. Programmers had to use external libraries just to validate and submit forms. Angular plays very well with user-input and provides directives not limited to: ng-dirty,ng-touched,ng-valid amongst other making form handling easy and intuitive. Angular gives programmers to write custom re-gex (regular expressions) to validate user-input, if needed. 
+ 							Moreover, Angular works very well with forms to handle user-input. Programmers had to use external libraries just to validate and submit forms. Angular plays very well with user-input and provides directives not limited to: ng-dirty,ng-touched,ng-valid amongst other making form handling easy and intuitive. Angular gives programmers to write custom re-gex (regular expressions) to validate user-input, if needed.
  							<br><br>
  							Angular gives power back to programmers to define custom validation rather depending on external libraries.
 							</p>
@@ -153,13 +158,13 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 						<div class="hs-inner">
 							<h2>Chapter II.</h2>
 							<h3>What makes it different</h3>
-							
+
 							<h4>All-in-one</h4>
 							<p>Node is revolution when it comes to writing servers. When it comes to severs, the first name that comes to the mind is PHP.  The equation below, illustrates how Node compares to PHP.</p>
 							<p><b>Node.js = PHP + Apache or ASP + IIS stacks.</b></p>
 
 
-							<p>Node is based on Chrome V8 engine and based on JavaScript, like Angular. This implies front-end and back-end can be based on the same language, limiting the number of languages the developer needs to learn. NodeJS makes the process of writing severs from scratch easier than ever before. Below is the all code needed to needed to write a simple server with Node. 
+							<p>Node is based on Chrome V8 engine and based on JavaScript, like Angular. This implies front-end and back-end can be based on the same language, limiting the number of languages the developer needs to learn. NodeJS makes the process of writing severs from scratch easier than ever before. Below is the all code needed to needed to write a simple server with Node.
 							</p>
 							<img src="images/node-server.png" >
 							<p>
@@ -188,13 +193,13 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 								<tr>
 									<td><img src="images/code-structure.png" > </td>
 									<td> <p>
-										The application lies in a folder called “app-de-todo”. 
+										The application lies in a folder called “app-de-todo”.
 										<br>The static files lie in folder “src” which holds Html/CSS/JavaScript/Images. <br><br>Another folder, “node modules” contains modules, which are used by Node to run the application.
 										<br><br>
-										The root folder “app-de-todo” holds the file “app.js” which is the starting point for the application. 
-										<br>This file acts like the “server” for the application and handles incoming requests. 
+										The root folder “app-de-todo” holds the file “app.js” which is the starting point for the application.
+										<br>This file acts like the “server” for the application and handles incoming requests.
 										<br><br>
-										The file “data.json” acts like the database for the application. 
+										The file “data.json” acts like the database for the application.
 										<br>All user data is read from the file and changes made by user are saved accordingly.
 										<br><br>
 										The application has been laid out following the modern web development standards.
@@ -207,17 +212,17 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 
 							<img style="border:1px solid grey"src="images/image-render.png" >
 
-							
+
 						</div>
 					</article>
 					<article class="hs-content" id="chapter4">
 						<div class="hs-inner">
 							<h2>Chapter IV.</h2>
 							<h3>The Begining</h3>
-							
+
 							<p>Angular/Node work in conjunction to render the application. When the user, hits the address in the browser (url), the server (Node) allows access to “src” folder by using middleware.
 							<br><br>
-							var bodyParser = require('body-parser') <br> 
+							var bodyParser = require('body-parser') <br>
 							app.use(bodyParser.json())<br>
 							app.use(express.static(__dirname + '/src')) <br>
 							<br><br>
@@ -235,20 +240,20 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 							Line 02, is what defines an angular application, this application is called “to-do-app”. When angular sees the tag “ng-app” it knows that the beginning to the ending tap is the context of the application. In this case &lt;html&gt;&lt;/html&gt;, the entire webpage is the angular application.
 							</p>
 							<p>
-							Line 13, the Angular code for the application, more on this later. 
+							Line 13, the Angular code for the application, more on this later.
 							</p>
 							<p>
-							Line 20, refers to an Angular Directive known an “ng-view”, as name may suggest, this directive controls the “views” for the application. 
+							Line 20, refers to an Angular Directive known an “ng-view”, as name may suggest, this directive controls the “views” for the application.
 							</p>
 
 
-							
 
-							
 
-							
 
-						
+
+
+
+
 						</div>
 					</article>
 					<article class="hs-content" id="chapter5">
@@ -277,7 +282,7 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 							</p>
 
 
-						
+
 						</div>
 					</article>
 					<article class="hs-content" id="chapter6">
@@ -300,6 +305,18 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 									  </tr>
 									 </tbody>
 							</table>
+                            <p>
+                                As the name suggests, "view" is what is rendered to the user and the controller is what controls the logic behind the view. The view introduces new Angular syntax :
+                                "ng-model","ng-click". "ng-model" in a nustshell is what the application wants to model, i.e in a way a variable, the controller knows about. Any change made to the model
+                                is reflected in real-time; this is how Angular achieves the "Data-Binding". <br><br>
+                                In the view, we are monitoring what the user types in the html text-boxes via the use of "ng-model", any time have access to the content/value of tex-boxes via their respective
+                                "ng-model" variables. <br><br>
+                                Upon entering the requested user-name/password in the text boxes, the clicking of the "Login" button triggers a call to the Angular function "Validate" present in the controller.
+                                This function checks if the user-name/password matches a specific combination ('user','pass') and upon success the user is directed to the 'my-list' view  and upon failure the text
+                                entered in the text-boxes is cleared.<br><br>
+                                The controller, 'FController', depends on a service "$location" whose functionality is similar to the 'Window.Location' in native Javacript, i.e redirect the user.
+                                </thead>
+                            </p>
 						</div>
 					</article>
 					<article class="hs-content" id="chapter7">
@@ -469,7 +486,7 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 				{ mousewheel : "js/jquery.mousewheel.js" },
 				{ mwheelIntent : "js/mwheelIntent.js" },
 				{ jScrollPane : "js/jquery.jscrollpane.min.js" },
-				
+
 				{ stringLib : "js/core.string.js" },
 				{ easing : "js/jquery.easing.1.3.js" },
 				{ smartresize : "js/jquery.smartresize.js" },
