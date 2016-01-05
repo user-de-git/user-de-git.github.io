@@ -414,7 +414,8 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 							</table>
 							<p>
 								It can been that when Angular issues an <b>get</b> request, Node handles this incoming request and handles it by fetching the contents of the 'data.json'
-								file and returns it. The controller which issues the request, catches the returned data and since, it's a JSON document consisting of keys as "items" & "userd", the value of the "items" key is stored in '$scope.data'. The received items in the form of array are rendered in the front-end.
+								file and returns it. The controller issuing the request, catches the returned data and since, it's a JSON object consisting of keys, "items" & "userd",
+                                the value of the "items" key is stored in '$scope.data' and is rendered in the front-end.
 							</p>
 
 							<h4>Delete to-do item</h4>
@@ -479,9 +480,9 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 								  </tbody>
 							</table>
 							<p>
-								The object which holds user's info. is passed to the Angular method "Update" and a <b>post</b> request is made. Node upon fetching
-								the request saves the object and replaces value of the "userd" key in the 'data.json' with the passes object and saves the updated user's
-								info and an message is displayed to user on success on the operation.
+								The object which holds user's info. is passed to the Angular method, "Update" and a <b>post</b> request is made. Node upon fetching
+								the request saves the object and replaces value of the "userd" key in the 'data.json' with the passed object and user's personal info. is updated
+								 and an message is displayed to user on success of the operation.
 							</p>
 
 
@@ -496,7 +497,8 @@ The data for the user is stored in a JSON file; this eliminates the need to set-
 								Although many platforms and languages exist to facilitate web development but the combination of Angular and Node is what was needed for a very long time.
 								Angular brings many powerful server side features to front development as illustrated in the paper. Node Js makes writing server side functionality
 								easy and intuitive.<br><br>
-								Both these frameworks are written in JavaScript, this means developers need to know only one language; consequently, making development easier for developers. The images below describe the growth of both these frameworks and how companies have adopted them as the first choice for their development.
+								Both these frameworks are written in JavaScript, this means developers need to know only one language; consequently, making development easier for developers.
+                                The images below describe the growth of both these frameworks and how companies have adopted them as the first choice for their development.
 							</p>
 							<br><br>
 							 <table>
